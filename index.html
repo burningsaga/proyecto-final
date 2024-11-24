@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componentes para Armar una PC</title>
+    <style>
+        /* CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        main {
+            padding: 1rem;
+        }
+        section {
+            margin-bottom: 2rem;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 1rem;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h2 {
+            color: #007BFF;
+        }
+        img {
+            width: 200px;
+            height: auto;
+            margin: 10px 0;
+            border-radius: 10px;
+        }
+        button {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            margin-top: 0.5rem;
+            border: none;
+            background-color: #28A745;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        footer {
+            text-align: center;
+            background-color: #007BFF;
+            color: white;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Guía para Armar tu PC</h1>
+        <p>Explora los componentes esenciales para construir tu equipo</p>
+    </header>
+    <main>
+        <section>
+            <h2>Procesador (CPU)</h2>
+            <img src="716hAjT1uUL._AC_UF350,350_QL80_.jpg" alt="Procesador">
+            <p>El cerebro de la computadora. Recomendamos procesadores como el Ryzen 5 5600G o Intel Core i5 de última generación.</p>
+            <button onclick="showInfo('cpu')">Más información</button>
+        </section>
+        <section>
+            <h2>Tarjeta Gráfica (GPU)</h2>
+            <img src="descarga.jpg" alt="Tarjeta gráfica">
+            <p>Responsable del rendimiento gráfico. Ejemplo: RX 6600M, RTX 3060 o superiores según tus necesidades.</p>
+            <button onclick="showInfo('gpu')">Más información</button>
+        </section>
+        <section>
+            <h2>Memoria RAM</h2>
+            <img src="descarga (1).jpg" alt="Memoria RAM">
+            <p>Permite a la PC manejar múltiples tareas. Para gaming y productividad, 16 GB o 32 GB son recomendados.</p>
+            <button onclick="showInfo('ram')">Más información</button>
+        </section>
+        <section>
+            <h2>Almacenamiento</h2>
+            <img src="descarga (2).jpg" alt="Almacenamiento">
+            <p>Elige entre SSD para velocidad (512 GB o 1 TB) o HDD para mayor capacidad.</p>
+            <button onclick="showInfo('storage')">Más información</button>
+        </section>
+        <section>
+            <h2>Fuente de Poder (PSU)</h2>
+            <img src="05842_1.jpg" alt="Fuente de poder">
+            <p>Suministra energía a los componentes. Ejemplo: Fuente de 500W para configuraciones básicas.</p>
+            <button onclick="showInfo('psu')">Más información</button>
+        </section>
+        <section>
+            <h2>Refrigeración</h2>
+            <img src="descarga (3).jpg" alt="Refrigeración">
+            <p>Mantiene la temperatura adecuada. Puedes usar disipadores por aire o refrigeración líquida como Cooler Master ML240L.</p>
+            <button onclick="showInfo('cooling')">Más información</button>
+        </section>
+    </main>
+    <footer>
+        <p>Guía para Armar tu PC &copy; 2024</p>
+    </footer>
+    <script>
+        // JavaScript
+        function showInfo(component) {
+            const info = {
+                cpu: "El CPU es crucial para todas las operaciones de tu PC. Recomendamos procesadores con al menos 6 núcleos para multitarea.",
+                gpu: "La tarjeta gráfica es esencial para gaming y diseño. Prioriza modelos actuales como la RX 6600M o RTX 3060 para un balance precio-rendimiento.",
+                ram: "La RAM impacta el rendimiento multitarea. Para gaming, se recomiendan módulos DDR4 o DDR5 según tu placa base.",
+                storage: "Un SSD garantiza arranques rápidos y mejor rendimiento general. Para almacenar muchos archivos, considera añadir un HDD.",
+                psu: "La fuente de poder debe tener una certificación 80 PLUS. Escoge una con suficiente capacidad para todos los componentes.",
+                cooling: "La refrigeración líquida ofrece mejor disipación, pero puede ser más costosa. Asegúrate de mantener las temperaturas de la CPU y GPU bajo control."
+            };
+            alert(info[component]);
+        }
+    </script>
+</body>
+</html>
